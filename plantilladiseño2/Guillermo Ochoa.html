@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Guillermo Ochoa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .header {
+            position: relative;
+            background-image: url("14.jpg"); /* Cambiar por la ruta de la imagen de encabezado de Guillermo Ochoa */
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 252, 239);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+            z-index: 1;
+        }
+        .header * {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(252, 250, 250);
+        }
+        .biography-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background-color: #fffacd;
+            border: 1px solid #ffeb99;
+            color: #000;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+        .list-group-item:hover {
+            background-color: #ffeb99;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+        .card-custom {
+            margin-bottom: 20px;
+        }
+        .timeline {
+            position: relative;
+            padding: 21px 0px 10px;
+            list-style: none;
+        }
+        .timeline:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 40px;
+            width: 2px;
+            margin-left: -1.5px;
+            content: '';
+            background-color: #e9ecef;
+        }
+        .timeline > li {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 50px;
+        }
+        .timeline .timeline-panel {
+            position: relative;
+            float: left;
+            width: calc(100% - 90px);
+            padding: 0px 20px 0px 80px;
+            text-align: left;
+        }
+        .timeline .timeline-heading h4 {
+            margin-top: 0;
+            color: inherit;
+        }
+        .timeline .timeline-body > p,
+        .timeline .timeline-body > ul {
+            margin-bottom: 0;
+        }
+        .timeline .timeline-badge {
+            color: #fff;
+            width: 54px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            margin-right: -25px;
+            background-color: #868e96;
+            z-index: 100;
+            border-radius: 50%;
+            font-size: 1.4rem;
+        }
+        .timeline .timeline-badge.primary {
+            background-color: #2f84d0;
+        }
+        .timeline .timeline-badge.success {
+            background-color: #5cb85c;
+        }
+        .timeline .timeline-badge.warning {
+            background-color: #f0ad4e;
+        }
+        .timeline .timeline-badge.danger {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Guillermo Ochoa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biografia">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#legado">Legado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carrera">Carrera</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#estadisticas">Estadísticas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Guillermo Ochoa</h1>
+        <p>La historia de un destacado portero mexicano</p>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <section id="biografia" class="mb-5">
+                    <h2 class="section-title">Biografía</h2>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="13.jpg" class="img-fluid biography-img" alt="Guillermo Ochoa">
+                        </div>
+                        <div class="col-md-8">
+                            <p>
+                                Guillermo Ochoa Magaña nació el 13 de julio de 1985 en Guadalajara, Jalisco, México. Desde temprana edad mostró un talento excepcional como portero, destacándose rápidamente en las divisiones juveniles.
+                            </p>
+                            <p>
+                                A lo largo de su carrera, Ochoa ha jugado en clubes destacados tanto en México como en Europa, incluyendo el Club América, el Ajaccio en Francia, el Málaga en España, y actualmente en el Standard de Lieja en Bélgica.
+                            </p>
+                            <p>
+                                Es conocido por sus habilidades bajo los tres palos y por representar a México en múltiples Copas del Mundo, donde ha sido una pieza clave en la defensa mexicana.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="logros" class="mb-5">
+                    <h2 class="section-title">Logros</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Campeón de la Liga MX con el Club América (Apertura 2005)</li>
+                        <li class="list-group-item">Mejor portero de la Liga francesa (temporada 2010-2011)</li>
+                        <li class="list-group-item">Incluido en el Equipo Ideal de la CONCACAF en múltiples ocasiones</li>
+                        <li class="list-group-item">Participación en varias Copas del Mundo con la selección nacional de México</li>
+                        <li class="list-group-item">Reconocimiento como uno de los mejores porteros de la Liga MX</li>
+                    </ul>
+                </section>
+
+                <section id="legado" class="mb-5">
+                    <h2 class="section-title">Legado</h2>
+                    <p>
+                        Guillermo Ochoa ha dejado una huella significativa en el fútbol mexicano y mundial, siendo admirado por su habilidad técnica y su dedicación al deporte. Su legado no solo se limita a sus logros en el campo, sino también a su influencia como líder y ejemplo para futuras generaciones de porteros.
+                    </p>
+                    <p>
+                        Fuera del campo, Ochoa también ha participado en actividades filantrópicas y ha trabajado para promover el deporte entre los jóvenes, demostrando su compromiso con la comunidad y el desarrollo social.
+                    </p>
+                    <div class="text-center">
+                        <img src="15.jpeg" class="img-fluid biography-img" alt="Guillermo Ochoa">
+                    </div>
+                </section>
+
+                <section id="carrera" class="mb-5">
+                    <h2 class="section-title">Carrera</h2>
+                    <div class="timeline">
+                        <ul>
+                            <li>
+                                <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Club América (2003-2011)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Debutó profesionalmente en el Club América, donde ganó varios títulos de liga y destacó como joven promesa.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Ajaccio (2011-2014)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Se unió al Ajaccio en Francia, convirtiéndose en un portero destacado en la liga francesa.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Málaga (2014-2017)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Jugó en el Málaga CF en España, consolidando su reputación como uno de los mejores porteros mexicanos.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-badge danger"><i class="glyphicon glyphicon-check"></i></div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4 class="timeline-title">Standard de Lieja (2017-presente)</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p>Actualmente juega en el Standard de Lieja en Bélgica, donde continúa demostrando su calidad bajo los tres palos.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="estadisticas" class="mb-5">
+                    <h2 class="section-title">Estadísticas</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Periodo</th>
+                                    <th>Equipo</th>
+                                    <th>Partidos</th>
+                                    <th>Goles recibidos</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2003-2011</td>
+                                    <td>Club América</td>
+                                    <td>240</td>
+                                    <td>215</td>
+                                </tr>
+                                <tr>
+                                    <td>2011-2014</td>
+                                    <td>Ajaccio</td>
+                                    <td>112</td>
+                                    <td>130</td>
+                                </tr>
+                                <tr>
+                                    <td>2014-2017</td>
+                                    <td>Málaga</td>
+                                    <td>159</td>
+                                    <td>170</td>
+                                </tr>
+                                <tr>
+                                    <td>2017-presente</td>
+                                    <td>Standard de Lieja</td>
+                                    <td>134</td>
+                                    <td>110</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="index.html" class="btn btn-primary mb-3">Regresar a la Página Principal</a>
+        <p>&copy; 2024 La Historia de Cristiano Ronaldo. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+                

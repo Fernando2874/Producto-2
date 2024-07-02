@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Hugo Sánchez</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .header {
+            position: relative;
+            background-image: url("10.jpeg"); /* Ruta a tu imagen de encabezado */
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 252, 239);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+            z-index: 1;
+        }
+        .header * {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(252, 250, 250);
+        }
+        .biography-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background-color: #f4fa9c;
+            border: 1px solid #e9f08f;
+        }
+        .list-group-item:hover {
+            background-color: #656b08;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hugo Sánchez</a>
+        <!-- Barra de navegación -->
+    </nav>
+
+    <div class="header">
+        <h1>Hugo Sánchez</h1>
+        <p>La historia de un ícono del fútbol</p>
+    </div>
+
+    <div class="container">
+        <section id="biografia">
+            <h2 class="section-title">Biografía</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="12.jpeg" class="img-fluid biography-img w-50" alt="Hugo Sánchez">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Hugo Sánchez Márquez nació el [fecha de nacimiento] en [lugar de nacimiento]. Desde joven, mostró un talento excepcional para el fútbol y se destacó rápidamente en [club juvenil]. Su habilidad goleadora lo llevó a ser reconocido como uno de los mejores delanteros de su generación.
+                    </p>
+                    <p>
+                        A lo largo de su carrera, Hugo Sánchez jugó en clubes destacados como [lista de clubes]. Es famoso por sus logros en la liga española, donde ganó [número] veces el trofeo Pichichi como máximo goleador.
+                    </p>
+                    <p>
+                        Además de su éxito en los clubes, Sánchez representó a [selección nacional] y participó en [número] Copas del Mundo. Es recordado por su estilo de juego único y su capacidad para marcar goles espectaculares.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros">
+            <h2 class="section-title">Logros</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Trofeo Pichichi 5 veces en la liga española</li>
+                <li class="list-group-item">5 títulos de La Liga con el Real Madrid</li>
+                <li class="list-group-item">2 títulos de la Primera División de México con el Club Universidad Nacional</li>
+                <li class="list-group-item">Copa del Rey con el Real Madrid (1988-89)</li>
+                <li class="list-group-item">Copa de la UEFA con el Real Madrid (1984-85)</li>
+                <li class="list-group-item">Representó a México en 3 Copas del Mundo de la FIFA</li>
+            </ul>
+        </section>
+
+        <section id="legado">
+            <h2 class="section-title">Legado</h2>
+            <p>
+                Hugo Sánchez dejó un legado duradero en el fútbol mundial, siendo reconocido no solo por sus habilidades excepcionales como jugador, sino también por su dedicación y mentalidad ganadora. Su influencia se extiende más allá del campo, inspirando a generaciones de futbolistas y aficionados por igual.
+            </p>
+            <p>
+                Además de su carrera deportiva, Hugo Sánchez ha estado involucrado en diversas iniciativas filantrópicas y proyectos educativos, demostrando su compromiso con mejorar las comunidades y ayudar a quienes más lo necesitan.
+            </p>
+            <img src="11.jpeg" class="img-fluid biography-img" alt="Hugo Sánchez">
+        </section>
+
+        <!-- Sección de carrera de Guillermo Ochoa -->
+        <section id="carrera">
+            <h2 class="section-title">Carrera de Guillermo Ochoa</h2>
+            <p>
+                Guillermo Ochoa comenzó su carrera profesional en [club debut] y rápidamente se destacó como uno de los porteros más prometedores de México. Su habilidad para detener disparos y su agilidad bajo los tres palos lo llevaron a ser conocido como "Memo" Ochoa.
+            </p>
+            <p>
+                A lo largo de los años, Ochoa ha jugado en clubes importantes como [lista de clubes]. Es reconocido por sus destacadas actuaciones en la [liga o competición], donde ha demostrado su habilidad para mantener la portería imbatida en numerosas ocasiones.
+            </p>
+            <p>
+                Además de su éxito en los clubes, Guillermo Ochoa ha sido un pilar en la selección nacional de México, participando en múltiples Copas del Mundo de la FIFA y siendo clave en momentos cruciales para su equipo.
+            </p>
+        </section>
+
+        <!-- Sección de estadísticas modificada para Guillermo Ochoa -->
+        <section id="estadisticas" class="mb-5">
+            <h2 class="section-title">Estadísticas</h2>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Periodo</th>
+                            <th>Equipo</th>
+                            <th>Partidos</th>
+                            <th>Goles recibidos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2003-2011</td>
+                            <td>Club América</td>
+                            <td>240</td>
+                            <td>215</td>
+                        </tr>
+                        <tr>
+                            <td>2011-2014</td>
+                            <td>Ajaccio</td>
+                            <td>112</td>
+                            <td>130</td>
+                        </tr>
+                        <tr>
+                            <td>2014-2017</td>
+                            <td>Málaga</td>
+                            <td>159</td>
+                            <td>170</td>
+                        </tr>
+                        <tr>
+                            <td>2017-presente</td>
+                            <td>Standard de Lieja</td>
+                            <td>134</td>
+                            <td>110</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>
+
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="index.html" class="btn btn-primary mb-3">Regresar a la Página Principal</a>
+        <p>&copy; 2024 La Historia de Hugo Sanchez. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

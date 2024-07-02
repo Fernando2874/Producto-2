@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Luis Hernández</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .header {
+            position: relative;
+            background-image: url("22.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 252, 239);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header * {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(252, 250, 250);
+        }
+        .biography-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background-color: #e0d251; /* Amarillo dorado clarito */
+            border: 1px solid #ffeb99; /* Borde amarillo claro */
+        }
+        .list-group-item:hover {
+            background-color: #ffeb99;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Luis Hernández</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biografia">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#legado">Legado</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Luis Hernández</h1>
+        <p>La historia de un goleador histórico</p>
+    </div>
+
+    <div class="container">
+        <section id="biografia">
+            <h2 class="section-title">Biografía</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="23.jpeg" class="img-fluid biography-img w-50" alt="Luis Hernández">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Luis Arturo Hernández Carreón nació el 22 de diciembre de 1968 en Poza Rica, Veracruz, México.
+                        Es conocido como uno de los delanteros más letales en la historia del fútbol mexicano, apodado "El Matador"
+                        por su impresionante capacidad para anotar goles.
+                    </p>
+                    <p>
+                        Comenzó su carrera profesional con el equipo de Cruz Azul en 1990, pero fue con Necaxa donde alcanzó la fama,
+                        ganando múltiples títulos de liga y consolidándose como una estrella. Su habilidad para encontrar el fondo de la red
+                        lo hizo destacar rápidamente en la liga mexicana.
+                    </p>
+                    <p>
+                        Hernández también tuvo una carrera notable en el extranjero, jugando en equipos como Boca Juniors en Argentina
+                        y el LA Galaxy en Estados Unidos. Fue una figura clave en la selección nacional de México, especialmente durante
+                        la Copa del Mundo de 1998, donde se convirtió en el máximo goleador mexicano en una sola edición del torneo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros">
+            <h2 class="section-title">Logros</h2>
+            <ul class="list-group">
+                <li class="list-group-item">2 títulos de Liga MX con Necaxa</li>
+                <li class="list-group-item">Máximo goleador mexicano en la Copa del Mundo de 1998</li>
+                <li class="list-group-item">Máximo goleador de la Copa América 1997</li>
+                <li class="list-group-item">Más de 30 goles internacionales con la selección de México</li>
+                <li class="list-group-item">Reconocido como uno de los mejores delanteros de la década de 1990 en México</li>
+            </ul>
+        </section>
+
+        <section id="legado">
+            <h2 class="section-title">Legado</h2>
+            <p>
+                Luis Hernández dejó una marca indeleble en el fútbol mexicano con su estilo inconfundible y su capacidad para
+                anotar goles en momentos cruciales. Su legado no solo incluye sus logros y habilidades, sino también su pasión
+                y dedicación al deporte, inspirando a futuras generaciones de futbolistas.
+            </p>
+            <p>
+                Fuera del campo, Hernández ha continuado siendo una figura influyente en el fútbol mexicano, trabajando como
+                comentarista y embajador del deporte, siempre con la misma pasión y dedicación que mostró durante su carrera profesional.
+            </p>
+            <img src="24.jpeg" class="img-fluid biography-img" alt="Luis Hernández">
+        </section>
+    </div>
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="index.html" class="btn btn-primary mb-3">Regresar a la Página Principal</a>
+        <p>&copy; 2024 La Historia de Luis Hernandez. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Jorge Campos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+            color: #343a40; /* Color principal de texto */
+        }
+        .header {
+            position: relative;
+            background-image: url("20.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 252, 239);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header * {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(252, 250, 250);
+        }
+        .biography-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background-color: #cce0ff; /* Azul claro */
+            border: 1px solid #99b3ff; /* Borde azul */
+            color: #343a40; /* Color principal de texto */
+        }
+        .list-group-item:hover {
+            background-color: #99b3ff;
+        }
+        .light-blue-background {
+            background-color: #8ddaf8; /* Fondo azul claro */
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+        .timeline {
+            position: relative;
+            padding: 21px 0px 10px;
+            list-style: none;
+        }
+        .timeline:before {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 40px;
+            width: 2px;
+            margin-left: -1.5px;
+            content: '';
+            background-color: #e9ecef;
+        }
+        .timeline > li {
+            position: relative;
+            min-height: 50px;
+            margin-bottom: 50px;
+        }
+        .timeline .timeline-panel {
+            position: relative;
+            float: left;
+            width: calc(100% - 90px);
+            padding: 0px 20px 0px 80px;
+            text-align: left;
+        }
+        .timeline .timeline-heading h4 {
+            margin-top: 0;
+            color: inherit;
+        }
+        .timeline .timeline-body > p,
+        .timeline .timeline-body > ul {
+            margin-bottom: 0;
+        }
+        .timeline .timeline-badge {
+            color: #fff;
+            width: 54px;
+            height: 54px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            margin-right: -25px;
+            background-color: #868e96;
+            z-index: 100;
+            border-radius: 50%;
+            font-size: 1.4rem;
+        }
+        .timeline .timeline-badge.primary {
+            background-color: #2f84d0;
+        }
+        .timeline .timeline-badge.success {
+            background-color: #5cb85c;
+        }
+        .timeline .timeline-badge.warning {
+            background-color: #f0ad4e;
+        }
+        .timeline .timeline-badge.danger {
+            background-color: #d9534f;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jorge Campos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biografia">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#legado">Legado</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#carrera">Carrera</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#estadisticas">Estadísticas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Jorge Campos</h1>
+        <p>La historia de un portero único</p>
+    </div>
+
+    <div class="container mt-5">
+        <section id="biografia" class="mb-5">
+            <h2 class="section-title">Biografía</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="19.jpeg" class="img-fluid biography-img" alt="Jorge Campos">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jorge Campos Navarrete nació el 15 de octubre de 1966 en Acapulco, Guerrero, México.
+                        Es conocido por su estilo colorido y su habilidad tanto como portero como delantero,
+                        lo que lo convirtió en uno de los jugadores más versátiles y queridos en la historia del fútbol mexicano.
+                    </p>
+                    <p>
+                        Comenzó su carrera profesional con los Pumas de la UNAM en 1988, donde rápidamente se destacó no solo por su
+                        capacidad bajo los tres palos, sino también por su habilidad para marcar goles cuando se le necesitaba como delantero.
+                        Su carisma y talento lo convirtieron en una figura icónica del fútbol.
+                    </p>
+                    <p>
+                        A lo largo de su carrera, Campos jugó para varios clubes en México y en el extranjero, incluyendo el LA Galaxy en Estados Unidos.
+                        También fue un miembro clave de la selección nacional de México, participando en múltiples Copas del Mundo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros" class="light-blue-background">
+            <h2 class="section-title">Logros</h2>
+            <ul class="list-group">
+                <li class="list-group-item">2 títulos de Liga MX con los Pumas de la UNAM</li>
+                <li class="list-group-item">Campeón de la Copa Confederaciones en 1999 con México</li>
+                <li class="list-group-item">Más de 130 apariciones con la selección nacional de México</li>
+                <li class="list-group-item">Participante en 3 Copas del Mundo (1994, 1998, 2002)</li>
+                <li class="list-group-item">Reconocido como uno de los mejores porteros de la década de 1990</li>
+            </ul>
+        </section>
+
+        <section id="legado" class="mb-5">
+            <h2 class="section-title">Legado</h2>
+            <p>
+                Jorge Campos dejó una marca imborrable en el fútbol mundial con su estilo inconfundible y su capacidad para sorprender a todos
+                con su versatilidad en elcampo. Más allá de sus habilidades técnicas y atléticas, Campos se convirtió en un símbolo de inspiración para futuros porteros y jugadores jóvenes, demostrando que con dedicación y pasión se pueden lograr grandes cosas en el deporte.
+
+                Además de su impacto en el campo, Campos es recordado por su personalidad carismática y su cercanía con los fanáticos, lo que lo convirtió en uno de los favoritos de la afición no solo en México, sino también a nivel internacional.
+                
+                <div class="text-center">
+                    <img src="21.jpg" class="img-fluid biography-img" alt="Jorge Campos">
+                </div>
+                </section>
+                <section id="carrera" class="mb-5">
+                    <h2 class="section-title">Carrera</h2>
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Pumas UNAM (1988-1995)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Comenzó su carrera profesional con los Pumas de la UNAM, destacándose por su habilidad tanto en la portería como en el ataque.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Chicago Fire (1998-2000)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Jugó en la Major League Soccer (MLS) con el Chicago Fire, contribuyendo significativamente al equipo con su experiencia y habilidades.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4 class="timeline-title">Selección Nacional de México (1991-2004)</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Fue un pilar clave en la selección mexicana, participando en múltiples Copas del Mundo y otros torneos internacionales.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section id="estadisticas" class="mb-5">
+                    <h2 class="section-title">Estadísticas</h2>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Periodo</th>
+                                    <th>Equipo</th>
+                                    <th>Partidos</th>
+                                    <th>Goles (como delantero)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1988-1995</td>
+                                    <td>Pumas UNAM</td>
+                                    <td>250</td>
+                                    <td>39</td>
+                                </tr>
+                                <tr>
+                                    <td>1998-2000</td>
+                                    <td>Chicago Fire</td>
+                                    <td>60</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>1991-2004</td>
+                                    <td>Selección Mexicana</td>
+                                    <td>130</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                </div>
+                </div>
+                </div>
+                <footer class="bg-dark text-white text-center py-3">
+                    <a href="index.html" class="btn btn-primary mb-3">Regresar a la Página Principal</a>
+                    <p>&copy; 2024 La Historia de Rafa Marquez. Todos los derechos reservados.</p>
+                </footer>
+                
+                <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                </body>
+                </html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Historia de Jorge Campos</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #ffffff;
+        }
+        .header {
+            position: relative;
+            background-image: url("18.jpeg");
+            background-size: cover;
+            background-position: center;
+            color: rgb(255, 252, 239);
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .header * {
+            position: relative;
+            z-index: 2;
+        }
+        .header h1 {
+            font-size: 3rem;
+        }
+        .section-title {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: rgb(252, 250, 250);
+        }
+        .biography-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .list-group-item {
+            background-color: #e1fca2; /* Naranja clarito */
+            border: 1px solid #c3f07a; /* Borde naranja claro */
+        }
+        .list-group-item:hover {
+            background-color: #07a107;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Jorge Campos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#biografia">Biografía</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logros">Logros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#legado">Legado</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="header">
+        <h1>Jorge Campos</h1>
+        <p>La historia de un portero único</p>
+    </div>
+
+    <div class="container">
+        <section id="biografia">
+            <h2 class="section-title">Biografía</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="16.jpeg" class="img-fluid biography-img w-50" alt="Jorge Campos">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jorge Campos Navarrete nació el 15 de octubre de 1966 en Acapulco, Guerrero, México.
+                        Es conocido por su estilo colorido y su habilidad tanto como portero como delantero,
+                        lo que lo convirtió en uno de los jugadores más versátiles y queridos en la historia del fútbol mexicano.
+                    </p>
+                    <p>
+                        Comenzó su carrera profesional con los Pumas de la UNAM en 1988, donde rápidamente se destacó no solo por su
+                        capacidad bajo los tres palos, sino también por su habilidad para marcar goles cuando se le necesitaba como delantero.
+                        Su carisma y talento lo convirtieron en una figura icónica del fútbol.
+                    </p>
+                    <p>
+                        A lo largo de su carrera, Campos jugó para varios clubes en México y en el extranjero, incluyendo el LA Galaxy en Estados Unidos.
+                        También fue un miembro clave de la selección nacional de México, participando en múltiples Copas del Mundo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="logros">
+            <h2 class="section-title">Logros</h2>
+            <ul class="list-group">
+                <li class="list-group-item">2 títulos de Liga MX con los Pumas de la UNAM</li>
+                <li class="list-group-item">Campeón de la Copa Confederaciones en 1999 con México</li>
+                <li class="list-group-item">Más de 130 apariciones con la selección nacional de México</li>
+                <li class="list-group-item">Participante en 3 Copas del Mundo (1994, 1998, 2002)</li>
+                <li class="list-group-item">Reconocido como uno de los mejores porteros de la década de 1990</li>
+            </ul>
+        </section>
+
+        <section id="legado">
+            <h2 class="section-title">Legado</h2>
+            <p>
+                Jorge Campos dejó una marca imborrable en el fútbol mundial con su estilo inconfundible y su capacidad para sorprender a todos
+                con su versatilidad en el campo. Su legado no solo incluye sus logros y habilidades, sino también su espíritu y amor por el juego,
+                inspirando a futuras generaciones de futbolistas.
+            </p>
+            <p>
+                Fuera del campo, Campos ha continuado siendo una figura influyente en el fútbol mexicano, trabajando como comentarista y embajador del deporte,
+                siempre con la misma pasión y dedicación que mostró durante su carrera profesional.
+            </p>
+            <img src="17.jpg" class="img-fluid biography-img" alt="Jorge Campos">
+        </section>
+    </div>
+
+    </footer>
+    <footer class="bg-dark text-white text-center py-3">
+        <a href="index.html" class="btn btn-primary mb-3">Regresar a la Página Principal</a>
+        <p>&copy; 2024 La Historia de Jorge Campos. Todos los derechos reservados.</p>
+    </footer>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+

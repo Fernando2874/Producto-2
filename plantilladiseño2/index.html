@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Blog de Leyendas del futbol</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="blog.css" rel="stylesheet">
+<link href="blog.rtl.css" rel="stylesheet">
+
+    <style>
+      /* Tipografía y colores */
+body {
+  background-color: #F5F5F5; /* Fondo gris claro */
+  font-family: 'Roboto', sans-serif; /* Fuente consistente para el cuerpo */
+  color: #333; /* Color de texto principal */
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del logo */
+.blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  color: #00853F; /* Verde TUDN */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+  color: #00561B; /* Verde oscuro TUDN en hover */
+}
+
+/* Estilo de encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  color: #00853F; /* Verde TUDN */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #00561B; /* Verde oscuro TUDN en hover */
+}
+
+/* Flexbox */
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { 
+  height: 250px; 
+}
+
+@media (min-width: 768px) {
+  .h-md-250 { 
+    height: 250px; 
+  }
+}
+
+/* Paginación */
+.blog-pagination {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-pagination a {
+  color: #00853F; /* Verde TUDN */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border: 1px solid #00853F; /* Borde del enlace de paginación */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-pagination a:hover {
+  background-color: #00853F; /* Fondo en hover */
+  color: #FFF; /* Color de texto en hover */
+}
+
+/* Publicaciones del blog */
+.blog-post {
+  margin-bottom: 4rem;
+  color: #000;
+  background-color: #FFF; /* Fondo blanco */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272; /* Color gris */
+  background-color: #DFF0D8; /* Fondo verde claro */
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+/* Botones */
+button {
+  background-color: #00853F; /* Verde TUDN */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background-color: #00561B; /* Verde oscuro TUDN */
+  transform: scale(1.05); /* Zoom en hover */
+}
+
+/* Tipografía y colores */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5; /* Fondo gris claro */
+  font-family: 'Roboto', sans-serif; /* Fuente consistente para el cuerpo */
+  color: #333; /* Color de texto principal */
+}
+
+/* Estilo del logo */
+.blog-header-logo {
+  font-family: Amiri, Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+  color: #00853F; /* Verde TUDN */
+  text-align: center; /* Centra el logo */
+  display: block; /* Asegura que el logo ocupa toda la línea */
+  margin: 1rem auto; /* Centra horizontalmente con margen */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.blog-header-logo:hover {
+  text-decoration: none;
+  color: #00561B; /* Verde oscuro TUDN en hover */
+}
+
+/* Estilo de encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Amiri, Georgia, "Times New Roman", serif;
+  color: #00853F; /* Verde TUDN */
+  margin-bottom: 1rem; /* Espaciado inferior */
+  text-align: center; /* Centra los encabezados */
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+  color: #00561B; /* Verde oscuro TUDN en hover */
+}
+
+/* Flexbox */
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { 
+  height: 250px; 
+}
+
+@media (min-width: 768px) {
+  .h-md-250 { 
+    height: 250px; 
+  }
+}
+
+/* Paginación */
+.blog-pagination {
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.blog-pagination a {
+  color: #00853F; /* Verde TUDN */
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border: 1px solid #00853F; /* Borde del enlace de paginación */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+.blog-pagination a:hover {
+  background-color: #00853F; /* Fondo en hover */
+  color: #FFF; /* Color de texto en hover */
+}
+
+/* Publicaciones del blog */
+.blog-post {
+  margin-bottom: 4rem;
+  background-color: #FFF; /* Fondo blanco */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272; /* Color gris */
+}
+
+/* Botones */
+button {
+  background-color: #00853F; /* Verde TUDN */
+  border: none;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+  background-color: #00561B; /* Verde oscuro TUDN */
+  transform: scale(1.05); /* Zoom en hover */
+}
+
+
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
+<div class="container">
+  <header class="border-bottom lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 text-center">
+        <h1>TUDN</h1>
+      </div>
+    </div>
+  </header>
+  
+
+  <div class="nav-scroller py-1 mb-3 border-bottom">
+    <nav class="nav nav-underline justify-content-between">
+      <a class="nav-item nav-link link-body-emphasis" href="Guillermo Ochoa.html">Guillermo Ochoa</a>
+      <a class="nav-item nav-link link-body-emphasis" href="Jorge Campos.html">Jorge Campos</a>
+      <a class="nav-item nav-link link-body-emphasis" href="Luis Hernandez.html">Luis Hernandez</a>
+    </nav>
+  </div>
+</div>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+    <div class="col-lg-6 px-0">
+      <h1 class="display-4 fst-italic">Copa America y las Leyendas del Futbol Mexicano</h1>
+      <p class="lead my-3">Multiples jugadores mexicanos han trascendido a ser leyendas del futbol Mexicano</p>
+    </div>
+  </div>
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Hugo Sánchez</h3>
+          <div class="mb-1 text-body-secondary">Historia</div>
+          <p class="card-text mb-auto">(México, 1958) Jugador de fútbol mexicano, sin duda uno de los mejores del deporte rey de los 80.</p>
+          <a href="Hugo Sanchez.html" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <h3 class="mb-0">Rafa Márquez</h3>
+          <div class="mb-1 text-body-secondary">Historia</div>
+          <p class="mb-auto">Rafael Márquez Álvarez conocido como Rafa Márquez, es un exfutbolista, director deportivo y entrenador mexicano.</p>
+          <a href="RafaMarquez.html" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continue reading
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Directo de TUDN
+      </h3>
+
+      <article class="blog-post">
+        <h2>La Selección Mexicana en la Copa América: Dos subcampeonatos y un ridículo histórico</h2>
+        <p class="blog-post-meta">21 de jun, 2024, 21:15 Eduardo Hernández Castro<a href="#">Mark</a></p>
+
+        <p>El Tri solía ser un invitado habitual que llegaba a las más altas instancias del torneo sudamericano, pero desde el 2011 la historia cambió.</p>
+        <hr>
+        <p>la Selección Mexicana solía medir sus avances futbolísticos en la Copa América. Fueron siete ediciones consecutivas (de 1993 a 2007) en las que el Tri avanzó a la siguiente fase del certamen, se lograron dos subcampeonatos históricos y tres terceros lugares, todo parecía ir de maravilla… Hasta que la Concacaf le obligó a darle prioridad a la Copa Oro.</p>
+        <p>Y es que a partir de Argentina 2011 el Tri sólo ha dado vergüenzas. En dos ocasiones se quedó en la primera ronda, la primera de ellas tras un escándalo disciplinario que marginó a varios jugadores. Cuando México por fin pudo avanzar en la Copa América Centenario 2016, se suscitó la peor goleada en su contra, un 0-7 apabullante de parte de Chile que fue un prólogo para que ya no se siguiera participando en el certamen en el 2019 y 2021.</p>
+        <h3>Selección Mexicana no resiente en tribuna últimos resultados en cancha.</h3>
+        <p>Cifras de los últimos 10 partidos de México en Estados Unidos:</p>
+        <ul>
+          <li>México 2-2 Australia	52,787	AT&T Stadium - Arlington	65.9	Amistoso Fecha FIFA</li>
+          <li>México 3-3 Uzbekistán	33,817	Mercedes Benz Stadium - Atlanta	47.6	Amistoso Fecha FIFA</li>
+          <li>México 2-0 Ghana	60,263	Bank of American - Charlotte	80.4	Amistoso Fecha FIFA</li>
+          <li>México 2-2 Alemania	62,284	Lincoln Financial Field - Filadelfia	92.1	Amistoso Fecha FIFA</li>
+          <li>México 2-3 Colombia	64,609	Memorial Coliseum - Los Ángeles	83.3	Amistoso</li>
+          <li>México 2-0 Panamá	40,926	AT&T Stadium - Arlington	51.1	Nations League</li>
+          <li>México 0-2 Estados Unidos	59,471	AT&T Stadium - Arlington	74.3	Nations League</li>
+          <li>México 1-0 Bolivia	52,273	Soldier Field - Chicago	84.9	Amistoso</li>
+          <li>México 0-4 Uruguay	57,852	Empower Field - Denver	75.9	Amistoso</li>
+          <li>México 2-3 Brasil	85,249	Kyle Field - Texas	80	Amistoso
+          </li>
+        </ul>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GCws-IbOziE?si=ZsVs88lRlRU58jUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <dl>
+          <p>Resumen del Partido de Mexico vs Jamaica 22/06/2024</p>
+          <h2>Así es la selección de México para la Copa América: convocados, mejores jugadores, formación y trayectoria</h2>
+          <dd>(CNN Español) -- La Copa América 2024 está a unos días de comenzar y verá enfrentarse a 16 selecciones masculinas mayores por el trofeo más codiciado del continente americano. De los 16 equipos que disputarán el torneo, 10 pertenecen a la Conmebol y seis más son de la Concacaf, entre ellos México, selección que nunca ha podido ganar dicha competencia (registra dos subcampeonatos y tres terceros lugares).</dd>
+          <dd>La selección mexicana de fútbol viene de uno de los momentos más desastrosos en su historia futbolística. En el Mundial de Qatar 2022, bajo el mando del entrenador argentino Gerardo "Tata" Martino, México quedó eliminado en la fase de grupos y fue la primera vez que "el Tri" no clasifica a la siguiente ronda desde la Copa del Mundo de Argentina 1978.</dd>
+          <dd>Pero el año mundialista venía precedido por otro lapso pésimo para el equipo. En 2021, el conjunto del Tata Martino perdió dos finales, de la Liga de Naciones de la Concacaf y de la Copa Oro, contra Estados Unidos, el acérrimo rival.</dd>
+        </dl>
+        <h2>Convocados de México para la Copa América 2024</h2>
+      </article>
+
+      <article class="blog-post">
+        <p>Gracias al único título obtenido por México en 2023 (la Copa Oro), el equipo pudo alcanzar su lugar en la Copa América 2024 e incluso ser cabeza de serie del Grupo B, en el que enfrentará a Jamaica (22 de junio), Venezuela (26 de junio) y Ecuador (30 de junio).</p>
+        <p>En mayo, el Tri, dirigido por Jaime "Jimmy" Lozano desde la Copa Oro 2023, dio a conocer su lista preliminar para la Copa América 2024, en la que destacó la ausencia de futbolistas que venían siendo titulares desde hace años e incluso desde mundiales pasados, tales como el arquero Guillermo Ochoa, el delantero Hirving Lozano o el delantero Henry Martin.</p>
+        <p>Este viernes 14 de junio, fue presentada la lista final de los convocados. Esta lista se conforma de 26 de los 31 futbolistas presentados en la prelista.</p>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Posicion</th>
+              <th>Equipo de LigaMX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Julio González</td>
+              <td>Portero</td>
+              <td>Pumas</td>
+            </tr>
+            <tr>
+              <td>Raúl Rangel</td>
+              <td>Portero</td>
+              <td>Chivas</td>
+            </tr>
+            <tr>
+              <td>Carlos Acevedo</td>
+              <td>Portero</td>
+              <td>Santos - Entró en Lugar de Malagón</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Jorge Sánchez</td>
+              <td>Defensa</td>
+              <td>Porto</td>
+            </tr>
+            <tr>
+              <td>Johan Vásquez</td>
+              <td>Defensa</td>
+              <td>Genoa</td>
+            </tr>
+            <tr>
+              <td>César Montes</td>
+              <td>Defensa</td>
+              <td>Almeria</td>
+            </tr>
+          </tfoot>
+          <tfoot>
+            <tr>
+              <td>Gerardo Arteaga</td>
+              <td>Defensa</td>
+              <td>Rayados</td>
+            </tr>
+            <tr>
+              <td>Bryan González</td>
+              <td>Defensa</td>
+              <td>Pachuca</td>
+            </tr>
+            <tr>
+              <td>Israel Reyes</td>
+              <td>Defensa</td>
+              <td>América</td>
+            </tr>
+            <tbody>
+              <tr>
+                <td>Edson Álvarez</td>
+                <td>Medio</td>
+                <td>West Ham</td>
+              </tr>
+              <tr>
+                <td>Orbelin Pineda</td>
+                <td>Medio</td>
+                <td>AEK Atenas</td>
+              </tr>
+              <tr>
+                <td>Luis Chávez</td>
+                <td>Medio</td>
+                <td>Dinamo de Moscú</td>
+              </tr>
+              <tr>
+                <td>Luis Romo</td>
+                <td>Medio</td>
+                <td>Rayados</td>
+              </tr>
+              <tr>
+                <td>Roberto Alvarado</td>
+                <td>Medio</td>
+                <td>Chivas</td>
+              </tr>
+              <tr>
+                <td>Jordi Cortizo</td>
+                <td>Medio</td>
+                <td>Rayados</td>
+              </tr>
+              <tbody>
+                <tr>
+                  <td>Santiago Giménez</td>
+                  <td>Delantero</td>
+                  <td>Feyenoord</td>
+                </tr>
+                <tr>
+                  <td>Julian Quiñones</td>
+                  <td>Delantero</td>
+                  <td>America</td>
+                </tr>
+                <tr>
+                  <td>Alexis Vega</td>
+                  <td>Delantero</td>
+                  <td>Toluca</td>
+                </tr>
+                <tr>
+                  <td>Uriel Antuna</td>
+                  <td>Delantero</td>
+                  <td>Cruz Azul</td>
+                </tr>
+                <tr>
+                  <td>César Huerta</td>
+                  <td>Delantero</td>
+                  <td>Pumas</td>
+                </tr>
+              </tbody>
+            </tbody>
+          </tfoot>
+        </table>
+      </article>
+
+      <article class="blog-post">
+        <h2>Jaime Lozano pide concentración de la Selección Mexicana para la Copa América</h2>
+        <p class="blog-post-meta">Publicado el 21 jun 24 - 07:01 AM CST. Actualizado el 22 jun 24 - 03:40 PM CST.</p>
+
+        <p>Toda vez que se tiene solucionado el tema económico para fortuna de Jimmy Lozano, para David Faitelson la Selección Mexicana debió pedir a los clubes que los dejen trabajar y se olviden de temas contractuales acerca de posibles ofertas de un lado o del otro en este mercado de fichajes.</p>
+        <p>“Sería muy sano que ocurriera así, blindaran a la selección y se concentraran en el evento”, indicó el comentarista de TUDN en la mesa de análisis de Línea de 4 previo al arranque de la Copa América 2024 este jueves.</p>
+        <p>Lo que sí es que Jimmy Lozano habló con los jugadores para mantenerlos concentrados como lo es el caso de Edson Álvarez, que de acuerdo a reportes, lo busca el Manchester United y que eso no sea una distracción, sino una motivación.</p>
+
+      </article>
+
+      <nav class="blog-pagination" aria-label="Pagination">
+        <a class="btn btn-outline-primary rounded-pill" href="estiloplantilla.html">Older</a>
+      </nav>
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">About</h4>
+          <p class="mb-0">El primer partido de fútbol que fue transmitido en directo por televisión fue en 1937. Fue un amistoso entre el equipo titular y los suplentes del Arsenal.</p>
+        </div>
+
+        <div>
+          <h4 class="fst-italic">Resumen de partidos de Copa America</h4>
+          <ul class="list-unstyled">
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="">
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/ufyFPIETjoY?si=6xQye-GGO6DFQrT_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Argentina vs Canada</h6>
+                  <small class="text-body-secondary">  20 jun 2024 </small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/rxomU05X6iY?si=WI3AibFI1PX2lwAx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Pero vs Chile</h6>
+                  <small class="text-body-secondary">20 jun 2024</small>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <iframe width="250" height="200" src="https://www.youtube.com/embed/ESLvS9C3frE?si=R8_rFI3fgnX2UT_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Ecuador vs Venezuela</h6>
+                  <small class="text-body-secondary">22 jun 2024</small>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-4">
+          <h4 class="fst-italic">Redes de Deportes</h4>
+          <ol class="list-unstyled">
+            <li><a href="https://x.com/LigaBBVAMX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+            <li><a href="https://www.facebook.com/tudnmex/?locale=es_LA">Facebook</a></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  </p>
+</footer>
+<script src="js/assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>

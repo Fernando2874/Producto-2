@@ -1,0 +1,103 @@
+body{
+    background-image: radial-gradient(circle at 50% -20.71%, #ffee00 0, #ffe600 12.5%, #fffb00 25%, #ffee54 3712.5%, #fbff00 50%, #fbff00 62.5%, #ffee00 75%, #f9fd00 87.5%, #fceb00 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0; /* Elimina el margen por defecto del body */
+    font-family: 'Lato', sans-serif; /* Usa una sola fuente para consistencia */
+}
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+form{
+    width: 500px;
+    border: 2px solid rgb(221, 18, 18);
+    padding: 6rem;
+    background-color: rgb(122, 129, 27);
+    border: none;
+    border-radius: 20px;
+    color: aliceblue;
+}
+
+h1{
+    display: block;
+    border: 2px solid #DAE908;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    background-color: #333; /* Fondo oscuro para contraste */
+    color: white; /* Texto en blanco */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+}
+
+label{
+    color: #F0F0F0;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: 300;
+    display: block;
+}
+
+input{
+    display: block;
+    border: 2px solid #0919FA;
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+    transition: border-color 0.3s ease; /* Transición suave para cambios de borde */
+}
+
+input:focus{
+    border-color: #DAE908; /* Cambio de color en enfoque */
+    outline: none; /* Elimina el borde por defecto en enfoque */
+}
+
+button{
+    display: block;
+    margin: 20px auto;
+    background-color: #E70E0E;
+    padding: .5rem;
+    color: #FFF;
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Sombra suave */
+    cursor: pointer; /* Cambia el cursor a pointer */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+button:hover{
+    background-color: rgba(0, 255, 13, 0.815);
+    color: #000;
+    transform: scale(1.05); /*efecto zoom*/
+}
+
+a{
+    display: inline-block;
+    margin: 10px 10px 0 0;
+    padding: 0.5rem;
+    text-decoration: none;
+    background-color: #444;
+    color: #FFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+

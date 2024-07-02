@@ -1,0 +1,63 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #FC6; /* Fondo color naranja claro */
+    font-family: 'Roboto', sans-serif; /* Fuente consistente */
+}
+
+div{
+    background: rgb(140, 157, 255); /* Fondo azul claro */
+    padding: 1rem; /* Añade padding para espaciamiento interno */
+    margin: 1rem auto; /* Centra horizontalmente con margen */
+    max-width: 1200px; /* Anchura máxima para el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px; /* Bordes redondeados */
+    text-align: center; /* Centra el texto dentro del div */
+}
+
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333; /* Color de texto oscuro */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #444; /* Color de texto gris medio */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+    margin: 1rem auto; /* Margen superior e inferior */
+    max-width: 800px; /* Anchura máxima para el texto */
+    text-align: justify; /* Justifica el texto */
+}
+
+h2{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #555; /* Color de texto gris oscuro */
+    margin-bottom: 1rem; /* Espacio inferior */
+}
+
+/* Estilo de botones */
+button {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1rem 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Verde oscuro */
+    transform: scale(1.05); /* Zoom en hover */
+}
+

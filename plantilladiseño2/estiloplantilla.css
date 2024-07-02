@@ -1,0 +1,74 @@
+body, html{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.caja{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header, footer{
+    background: #CBC60E;
+    display: block;
+    min-height: 10%;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FF0;
+    margin: 0;
+}
+
+nav, article, aside {
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo de nav */
+nav {
+    background: #8C9DFF;
+    flex: 1;
+}
+
+/* Estilo de article */
+article {
+    background: #BCFFBC;
+    flex: 2;
+}
+
+/* Estilo de aside */
+aside {
+    background: #CCF;
+    flex: 1;
+}
+
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Layout usando flexbox */
+.main-content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+/* Ajuste para visualizacion de los dispositivos móviles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+    nav, article, aside {
+        flex: 1; /* Igual altura en columnas */
+    }
+}
